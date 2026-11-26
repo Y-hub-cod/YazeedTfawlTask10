@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --maincolor: rgb(206, 41, 102);
+    --secondcolor: rgb(212, 154, 154);
+    --textcolor: rgb(174, 0, 255);
+    --hovercolor: rgb(212, 154, 154);
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Img/1.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+header .H1{
+    width: 100%;
+    height:100vh;
+    background-color: rgba(248, 172, 248, 0.326);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+.text{
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--textcolor);
+}
+header .H1 .P{
+    color: var(--maincolor);
+    font-family: "Lavishly Yours", cursive;
+}
+header .H1 button{
+    padding: 10px 20px;
+    font-size: 1em ;
+    font-weight: bold;
+    border-radius: 0 20px;
+    border: none;
+    background-color: var(--secondcolor);
+    color: var(--maincolor);
+    transition: all 2s;
+}
+header .H1 button:hover{
+    background-color: var(--maincolor);
+    border-radius: 20px 0;
+    color: var(--secondcolor);
+    scale: 1.1;
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 8%;
+    background-color: #fff;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--maincolor);
+    margin-bottom: 12px;
+}
+
+.about-text p {
+    font-size: 10px;
+    line-height: 1.8;
+    color: #4b4a4a;
+    max-width: 500px;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 380px;
+    height: 180px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 0 20px;
+    border-radius: 0 20px;
+}
+
+@media (max-width: 768px) {
+    header{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(248, 172, 248, 0.326);
+    }
+
+    header .overlay{
+        flex-direction: column;
+        font-size: 15px;
+    }
+    .about-text h2 {
+        margin-bottom: 30px;
+    }
+    .about {
+        flex-direction: column;
+        text-align: left;
+        padding: 40px 20px;
+    }
+    .about-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
